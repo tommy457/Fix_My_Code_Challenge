@@ -8,6 +8,7 @@ class square:
     height = 0
 
     def __init__(self, *args, **kwargs):
+        """Constructor"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -25,7 +26,7 @@ class square:
 
 
 if __name__ == "__main__":
-
+    """Create square and print its area and permiter and its represantation"""
     s = square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
